@@ -1,5 +1,5 @@
 # Assignment 1
 
 Write a Java Program that demonstrate multiple interface/inheritanc
-## Table of Contents
-- [Screenshots](#concept.jpg)
+# class diagram
+![Alt text](F:\4Y1S\OOD\lab\MultipleInheritance\concept.jpg)
