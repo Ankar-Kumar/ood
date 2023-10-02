@@ -1,6 +1,5 @@
-# Assignment 2
+# Assignment 1
 
-Welcome to My Awesome Project! This is a brief overview of what this project is about.
-
-## Table of Contents
-- [Screenshots](#concept.jpg)
+Write a Java Program that demonstrate multiple interface/inheritance.
+# class diagram
+![diagram](diagram.jpg)

@@ -1,6 +1,8 @@
-public class Dogs extends Animal {
-    public Dogs(String name, int age) {
-        super(name, age); //animal class parameter passing
+public class Dog extends Animal {
+    private String owner;
+    public Dog(String name, int age,String owner) {
+        super(name, age); 
+        this.owner = owner;
     }
 
     public void makeSound() {

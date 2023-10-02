@@ -1,7 +1,9 @@
 
 class Fish extends Animal {
-    public Fish(String name, int age) {
+    private String owner;
+    public Fish(String name, int age,String owner) {
         super(name, age);
+        this.owner = owner;
     }
 
     public void makeSound() {

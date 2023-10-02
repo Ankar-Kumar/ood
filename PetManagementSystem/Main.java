@@ -1,9 +1,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        Animal dog = new Dogs("Buddy", 12);
-        Animal cat = new Cat("Whiskers", 2);
-        Animal fish = new Fish("Nemo", 1);
+        Animal dog = new Dog("Buddy", 12,"Adrita");
+        Animal cat = new Cat("Whiskers", 2,"Akif");
+        Animal fish = new Fish("Nemo", 1,"Farjana");
 
         dog.eat();
         cat.eat();
