@@ -2,4 +2,4 @@
 
 Write a Java Program that demonstrate multiple interface/inheritance.
 # class diagram
-![diagram](diagram.jpg)
+![diagram](diagram.png)
