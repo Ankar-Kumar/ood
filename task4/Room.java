@@ -1,8 +1,8 @@
 
 public class Room implements IStructure {
-    private String name;
-    private double area;
-    private double volume;
+    public String name;
+    public double area;
+    public double volume;
 
     public Room(String name, double area, double volume) {
         this.name = name;
