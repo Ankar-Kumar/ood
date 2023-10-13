@@ -43,9 +43,6 @@ The Automated Teller Machine (ATM) is an integral part of modern banking, provid
 
 15. **User**: Collects the cash and the receipt.
 
-16. **User**: May choose to perform additional transactions.
-
-17. **ATM** repeats the process for new transaction requests.
 
 18. **User**: Concludes the session by ejecting their ATM card.
 
