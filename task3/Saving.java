@@ -1,19 +1,18 @@
 
-public class Investment implements IAccount{
+public class Saving implements  IAccount{
     private final int accountNumber;
     private int balance;
-    public Investment(int accountNumber, int initAmount)
+    public Saving(int accountNumber, int initAmount)
     {
          this.accountNumber = accountNumber;
          this.balance = initAmount;
-        //System.out.println("Investement Account Number is: " +accountNumber);
+        //System.out.println("Saving Account Number is: " +accountNumber);
     }
 
     @Override
     public void deposit(int amount) {
         balance +=amount;
         //System.out.println("Money Deposited to account number: " +accountNumber + "  and the ammount is: " + balance);
-
     }
 
     @Override

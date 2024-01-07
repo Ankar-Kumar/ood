@@ -3,7 +3,7 @@ public abstract class WebPageDecorator implements WebPage {
     public WebPageDecorator(WebPage webpage){
         this.page=webpage;
     }
-
+    // override
     public void display(){
         this.page.display();
     }

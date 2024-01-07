@@ -5,11 +5,11 @@ public class Dog extends Animal {
         this.owner = owner;
     }
 
-    public void makeSound() {
-        System.out.println(getName() + " barks.");
-    }
+    // public void makeSound() {
+    //     System.out.println(getName() + " barks.");
+    // }
 
-    public void fetch() {
-        System.out.println(getName() + " is fetching a ball.");
-    }
+    // public void fetch() {
+    //     System.out.println(getName() + " is fetching a ball.");
+    // }
 }

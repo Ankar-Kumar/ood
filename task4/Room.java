@@ -11,29 +11,29 @@ public class Room implements IStructure {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void enter() {
-        System.out.println("You have entered the " + this.getName());
+        System.out.println("You have entered the " + getName());
     }
 
     public void exit() {
-        System.out.println("You have left the " + this.getName());
+        System.out.println("You have left the " + getName());
     }
 
     public void location() {
-        System.out.println("You are currently in the " + this.getName());
+        System.out.println("You are currently in the " + getName());
     }
 
 
     @Override
     public double getArea() {
-        return this.area;
+        return area;
     }
 
     @Override
     public double getVolume() {
-        return this.volume;
+        return volume;
     }
 }

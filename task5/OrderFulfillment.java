@@ -1,5 +1,5 @@
 import java.util.List;
-
+// proxy class
 public class OrderFulfillment implements IOrder {
         private List<Warehouse> warehouses;
         public OrderFulfillment(List<Warehouse>warehouses){

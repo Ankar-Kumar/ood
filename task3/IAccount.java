@@ -1,9 +1,8 @@
-import java.math.BigDecimal;
 
 public interface IAccount {
-    public void deposite(BigDecimal amount);
-    public void withdraw(BigDecimal amount);
-    public void transfer(IAccount toAccount,BigDecimal amount);
-
+    public void deposit(int amount);
+    public void withdraw(int amount);
+    public void transfer(IAccount toAccount, int amount);
     public int getAccountNumber();
+    public int showBalance();
 }
