@@ -1,7 +1,7 @@
 public class Animal {
     private String name;
     private int age;
-    
+    private String owner;
     public Animal(String name, int age) {
         this.name = name;
         this.age = age;
@@ -15,7 +15,9 @@ public class Animal {
     public int getAge() {
         return age;
     }
-
+    
+   
+    
 
     public void eat() {
         System.out.println(name + " is eating.");

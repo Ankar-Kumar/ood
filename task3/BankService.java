@@ -1,7 +1,7 @@
 import java.util.Hashtable;
 
 public class BankService {
-    private Hashtable<Integer, IAccount> bankAccounts;
+    private Hashtable<Integer, IAccount> bankAccounts; //acount number and account type
     private int nextAccountNumber;
     public BankService()
     {
@@ -40,7 +40,7 @@ public class BankService {
 
     public void transferMoney(int to, int from, int amount)
     {
-        IAccount toAccount = bankAccounts.get(to);
+        IAccount toAccount = bankAccounts.get(to); //acount number dia account type pabo
         IAccount fromAccount = bankAccounts.get(from);
         fromAccount.transfer(toAccount, amount);
     }
@@ -60,7 +60,6 @@ public class BankService {
     public int showBalance(int accountNumber)
     {
         IAccount account = bankAccounts.get(accountNumber);
-        int currentBalance = account.showBalance();
-        return currentBalance;
+        return account.showBalance(); //current balance show 
     }
 }

@@ -4,14 +4,12 @@ class HasOneDollarState implements State {
     }
 
     public void ejectMoney(VendingMachine vendingMachine) {
-        System.out.println("Returning money.");
-        vendingMachine.doReturnMoney();
+        System.out.println("Returning money."); //how to returning money those result is here
         vendingMachine.setState(vendingMachine.getIdleState());
     }
 
     public void dispense(VendingMachine vendingMachine) {
         System.out.println("Releasing product.");
-        vendingMachine.doReleaseProduct();
         if (vendingMachine.getCount() > 1) {
             vendingMachine.setState(vendingMachine.getIdleState());
         } else {

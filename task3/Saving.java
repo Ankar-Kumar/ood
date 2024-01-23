@@ -10,9 +10,14 @@ public class Saving implements  IAccount{
     }
 
     @Override
-    public void deposit(int amount) {
+    public void deposit(int amount) { //balance barbe saving account
         balance +=amount;
         //System.out.println("Money Deposited to account number: " +accountNumber + "  and the ammount is: " + balance);
+    }
+    
+    @Override
+    public void withdraw(int amount) {
+        balance -= amount;
     }
 
     @Override
@@ -22,10 +27,7 @@ public class Saving implements  IAccount{
         //System.out.println("Money transfered from account Number: " +accountNumber + "  and the ammount is: " + balance);
     }
 
-    @Override
-    public void withdraw(int amount) {
-        balance -=amount;
-    }
+   
 
     @Override
     public int getAccountNumber() {

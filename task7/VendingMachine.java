@@ -2,6 +2,7 @@ class VendingMachine {
     private State idleState;
     private State hasOneDollarState;
     private State outOfStockState;
+
     private State currentState;
     private int count;
 
@@ -11,10 +12,10 @@ class VendingMachine {
         outOfStockState = new OutOfStockState();
 
         if (count > 0) {
-            currentState = idleState;
+            currentState = idleState; //product thaka mane idele state e thaka
             this.count = count;
         } else {
-            currentState = outOfStockState;
+            currentState = outOfStockState;// mane product ta nai 
             this.count = 0;
         }
     }
@@ -30,6 +31,10 @@ class VendingMachine {
     public void dispense() {
         currentState.dispense(this);
     }
+    
+    public State getHasOneDollarState() {
+        return hasOneDollarState;
+    }
 
     // Other methods for getting and setting state, returning money, and releasing the product
 
@@ -37,9 +42,7 @@ class VendingMachine {
         return idleState;
     }
 
-    public State getHasOneDollarState() {
-        return hasOneDollarState;
-    }
+  
 
     public State getOutOfStockState() {
         return outOfStockState;
@@ -53,13 +56,6 @@ class VendingMachine {
         return count;
     }
 
-    public void doReturnMoney() {
-        // Implement returning money logic
-        System.out.println("Returning money to the user.");
-    }
 
-    public void doReleaseProduct() {
-        // Implement releasing the product logic
-        System.out.println("Releasing the product to the user.");
-    }
+    
 }
