@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Bird bird = new Bird("sparrow");
         Fish fish=new Fish("Salmon");
-        FlyingFish flyingFish = new FlyingFish("Salmon","sparrow");
+        FlyingFish flyingFish = new FlyingFish(fish,bird);
 
         fish.swim();                  
         flyingFish.swim(); 

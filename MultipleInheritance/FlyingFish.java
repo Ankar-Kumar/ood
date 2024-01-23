@@ -2,9 +2,9 @@ class FlyingFish implements Swimming, Flying {
     private Fish fish;
     private Bird bird;
     // private String name;
-    public FlyingFish(String fish,String brd) {  // Constructor
-        this.fish = new Fish(fish);
-        this.bird = new Bird(brd);
+    public FlyingFish(Fish fish,Bird brd) {  // Constructor
+        this.fish = fish;
+        this.bird = brd;
     }
 
     @Override
